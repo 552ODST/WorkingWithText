@@ -30,29 +30,22 @@ namespace WorkingWithText
                     return false;
                 }
             }
-
-            // {5, 6, 7, 8, 9}
-
-            // {9, 8, 7, 6, 5}
-
-            // LOok at first two numbers in list, take the differencce. Determine whether descending or ascending.
-
-            var difference = numbersSplit[1] - numbersSplit[0];
-
-            // Make sure that ALL of the remining numbers have the same difference with their proceeding element.
+             var difference = numbersSplit[1] - numbersSplit[0];
 
             for (var i = 1; i < numbersSplit.Count; i++)
             {
-                if (numbersSplit[i] != numbersSplit[i - 1] + 1)
+                if (numbersSplit[i] != numbersSplit[i - 1] + difference)
                 {
                     return false;
                 }
-                else 
-                return true;
+                else if
+                   (numbersSplit[1] != numbersSplit[i - 1] + difference)
+                     {
+                        return true;
+                     }
             }
-            return true;
+            return false;
         }
-        
         // 2- Write a method that accepts a few numbers separated by a hyphen. Check
         // to see if there are duplicates. If so, return bool True; otherwise, return bool False.
         public static bool AreThereDuplicates(string hyphenNum)
