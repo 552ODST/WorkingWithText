@@ -1,0 +1,6 @@
+﻿Build started...
+1>------ Build started: Project: WorkingWithText, Configuration: Debug Any CPU ------
+1>WorkingWithText -> C:\Users\16239\Source\Repos\WorkingWithText\WorkingWithText\bin\Debug\netcoreapp3.1\WorkingWithText.dll
+2>------ Build started: Project: WorkingWithTextTest, Configuration: Debug Any CPU ------
+2>WorkingWithTextTest -> C:\Users\16239\Source\Repos\WorkingWithText\WorkingWithTextTest\bin\Debug\netcoreapp3.1\WorkingWithTextTest.dll
+========== Build: 2 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
