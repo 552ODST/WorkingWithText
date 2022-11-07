@@ -66,6 +66,14 @@ namespace WorkingWithTextTest
 
             result.Should().BeFalse(because: "the input (1-2-4-3) is not consecutive");
         }
+        
+        [TestMethod]
+        public void AlternatingConsecutive()
+        {
+            var result = WorkingWithText.WorkingWithText.IsConsecutive("15-16-15-16-15-16");
+
+            result.Should().BeFalse(because: "the input is alternating consecutive (15-16-15-16-15-16)");
+        }
     }
 
 
