@@ -74,6 +74,14 @@ namespace WorkingWithTextTest
 
             result.Should().BeFalse(because: "the input is alternating consecutive (15-16-15-16-15-16)");
         }
+        
+        [TestMethod]
+        public void SingleDigitAlternate()
+        {
+            var result = WorkingWithText.WorkingWithText.IsConsecutive("1-2-1-2-1-2");
+
+            result.Should().BeFalse(because: "the input is alternating consecutive (1-2-1-2-1-2)");
+        }
     }
 
 
